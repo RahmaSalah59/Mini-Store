@@ -42,7 +42,7 @@ src
 ## 🚀 Installation & Running
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/basic-store-api.git
+git clone https://github.com/RahmaSalah59/Mini-Store.git
 cd basic-store-api
 ```
 
@@ -71,41 +71,6 @@ server.port=9191
 
 ---
 
-## 🧪 Testing in Postman
 
-1. Open **Postman**.
-2. Create a new collection called **Basic Store API**.
-3. Add requests:
-   - **GET** → `http://localhost:9191/api/products`
-   - **GET** → `http://localhost:9191/api/products/1`
-   - **POST** → `http://localhost:9191/api/products` → Body (JSON):
-     ```json
-     {
-       "name": "Smartphone",
-       "price": 799.99
-     }
-     ```
-     Set **Content-Type** to `application/json`.
-   - **PUT** → `http://localhost:9191/api/products/1` → Body (JSON):
-     ```json
-     {
-       "name": "Updated Smartphone",
-       "price": 899.99
-     }
-     ```
-   - **DELETE** → `http://localhost:9191/api/products/1`
 
-4. Send requests and verify responses.
-
----
-
-## 📌 Notes
-- Since there is **no database**, data will reset when the app restarts.
-- The API is **CORS-enabled** by default (if configured), so it can work with frontends like React, Angular, or Vue.
-
----
-
-## 📄 License
-This project is open-source and free to use for educational purposes.
-```
 
