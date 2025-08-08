@@ -1,5 +1,4 @@
 
-```markdown
 # 🛒 Basic Store API (Spring Boot)
 
 A simple **Spring Boot** application that simulates a basic store product management system **without database integration**.  
@@ -23,7 +22,6 @@ Products are stored **in-memory**, making it perfect for learning **Spring Boot 
 - **Spring Boot 3.x** (Spring Web)  
 - **Maven** (for build and dependency management)  
 
----
 
 ## 📂 Project Structure
 ```
@@ -53,10 +51,10 @@ cd basic-store-api
 mvn spring-boot:run
 ```
 
-> By default, the app runs on **http://localhost:8080**.  
+> By default, the app runs on **http://localhost:9191**.  
 > You can change the port in `src/main/resources/application.properties`:
 ```properties
-server.port=8081
+server.port=9191
 ```
 
 ---
@@ -78,9 +76,9 @@ server.port=8081
 1. Open **Postman**.
 2. Create a new collection called **Basic Store API**.
 3. Add requests:
-   - **GET** → `http://localhost:8080/api/products`
-   - **GET** → `http://localhost:8080/api/products/1`
-   - **POST** → `http://localhost:8080/api/products` → Body (JSON):
+   - **GET** → `http://localhost:9191/api/products`
+   - **GET** → `http://localhost:9191/api/products/1`
+   - **POST** → `http://localhost:9191/api/products` → Body (JSON):
      ```json
      {
        "name": "Smartphone",
@@ -88,14 +86,14 @@ server.port=8081
      }
      ```
      Set **Content-Type** to `application/json`.
-   - **PUT** → `http://localhost:8080/api/products/1` → Body (JSON):
+   - **PUT** → `http://localhost:9191/api/products/1` → Body (JSON):
      ```json
      {
        "name": "Updated Smartphone",
        "price": 899.99
      }
      ```
-   - **DELETE** → `http://localhost:8080/api/products/1`
+   - **DELETE** → `http://localhost:9191/api/products/1`
 
 4. Send requests and verify responses.
 
@@ -110,3 +108,4 @@ server.port=8081
 ## 📄 License
 This project is open-source and free to use for educational purposes.
 ```
+
